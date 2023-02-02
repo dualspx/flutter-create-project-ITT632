@@ -146,7 +146,7 @@ class EditProfile extends StatelessWidget {
                       token = jsonEncode(token);
                       debugPrint("passing data $mapData");
                       var response = await Dio().put(
-                          'http://172.31.128.1:3000/editProfile',
+                          'http://134.209.107.180:3000/editProfile',
                           data: mapData,
                           options: Options(
                               headers: {'Authorization': 'Bearer $token'}));

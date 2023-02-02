@@ -208,7 +208,7 @@ class _signupPageState extends State<signupPage> {
                             mapData['email'] = _email.text;
                             mapData['password'] = _password.text;
                             var response = await Dio().post(
-                                "http://172.24.208.1:3000/register",
+                                "http://134.209.107.180:3000/register",
                                 data: mapData);
                             if (response.statusCode == 200) {
                               debugPrint(response.data);

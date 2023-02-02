@@ -168,7 +168,7 @@ class _newPageState extends State<newPage> {
                         mapData['password'] = _password.text;
                         debugPrint(mapData.toString());
                         var response = await Dio().post(
-                            "http://172.31.128.1:3000/login",
+                            "http://134.209.107.180:3000/login",
                             data: mapData);
                         debugPrint(response.statusMessage);
                         if (response.statusCode == 200) {
